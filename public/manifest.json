@@ -1,0 +1,51 @@
+{
+    "name": "next-helpdesk",
+    "short_name": "next-helpdesk",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "sizes": "211x211",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "24x24",
+            "type": "image/x-icon"
+        }
+    ],
+    "screenshots": [
+    {
+      "src": "/dashboard.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dashboard on Desktop"
+    },
+    {
+      "src": "/tickets.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tickets on Desktop"
+    },
+    {
+      "src": "/not-found.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Error Page on Desktop"
+    },
+    {
+      "src": "/dashboard-mobile.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Dashboard on Mobile"
+    }
+  ],
+    "theme_color": "#336633",
+    "background_color": "#effffe",
+    "display": "fullscreen",
+    "orientation": "portrait"
+}

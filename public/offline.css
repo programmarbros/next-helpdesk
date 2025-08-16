@@ -1,0 +1,394 @@
+/* Base styles */
+body {
+  background-color: #effffe; /* light background */
+  color: #6b7280; /* medium gray text */
+  margin: 2rem;
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: #455554; /* primary site color */
+  font-size: 1.125rem;
+}
+
+main {
+  max-width: 72rem; /* center content with width limit */
+  margin: auto;
+  padding: .5rem;
+}
+
+main > h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  color: #455554;
+  text-decoration: underline;
+}
+
+/* Navigation bar */
+nav {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: .5rem auto;
+  max-width: 72rem;
+}
+
+nav a, nav span {
+  color: #6b7280;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+main nav {
+  border: 0;
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+button:hover, .button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(10, 10, 10, 0.5);
+  cursor: pointer;
+}
+
+.button {
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #99ff99;
+}
+
+.btn-primary {
+  background-color: #246642;
+  color: #ddffdd;
+}
+
+.btn-secondary {
+  background-color: #bdffdb;
+  color: #1f2937;
+}
+
+/* Forms */
+form {
+  padding: 1rem 1.75rem;
+  background-color: #02ffff20; /* subtle green background */
+  border-radius: 0.375rem;
+  display: block;
+  margin: 0 auto;
+  min-width: fit-content;
+  width: 90%;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea,
+form select {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border-color: #00000000;
+  width: 98%;
+  resize: none;
+}
+
+form select, .full-width {
+  width: 100%;
+}
+
+form button {
+  display: block;
+  margin: 0 auto;
+  border-color: #00000000;
+}
+
+form.narrow {
+  width: 30%;
+}
+
+/* Feedback messages */
+.success, .error {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  max-width: fit-content;
+  margin: 1rem auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.success {
+  border: 2px solid #10b981;
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.error {
+  border: 2px solid #f87171;
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* Card component */
+.card {
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h3 {
+  font-weight: 700;
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Priority pill labels */
+.pill {
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.75rem;
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pill.high {
+  background-color: #fca5a5;
+  color: #dc2626;
+}
+
+.pill.medium {
+  background-color: #93c5fd;
+  color: #3b82f6;
+}
+
+.pill.low {
+  background-color: #86efac;
+  color: #10b981;
+}
+
+.card .pill {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 0.375rem;
+}
+
+/* Utility classes */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.large {
+  font-size: 2em;
+}
+
+.narrow {
+  width: 70%;
+}
+
+.flex-disperse {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*PopUp styles*/
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    max-width: 500px;
+    width: 90%;
+}
+
+/*Loading styles*/
+.loading {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(#abccba 20%, transparent 20%);
+  mask-image: radial-gradient(circle, transparent 60%, black 61%);
+  -webkit-mask-image: radial-gradient(circle, transparent 60%, black 61%);
+  animation: spin 1s linear infinite;
+}
+
+/* Memory Match game */
+.game-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  position: relative;
+  text-align: center;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  height: 20rem;
+}
+
+.game-title {
+  margin-bottom: 1rem;
+}
+
+.game-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.625rem;
+}
+
+.game-card {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-card.flipped {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.game-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.3125rem;
+}
+
+.game-timer {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.game-low-time {
+  color: red;
+}
+
+.game-restart-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: .3rem;
+}
+
+.game-restart-btn:hover {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+.game-end-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.game-score {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.game-retry {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.125rem;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.game-retry:hover {
+  background-color: #45a049;
+}
+
+/*Keyframes*/
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

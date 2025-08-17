@@ -50,7 +50,7 @@ To run this project locally:
 Here are some screenshots showcasing the application:
 
 - **Dashboard**: ![Dashboard](/public/dashboard.png)
-- **Ticket Page**: ![Ticket Page](/tickets.png)
+- **Ticket Page**: ![Ticket Page](/public/tickets.png)
 - **Error Page**: ![Error Page](/public/not-found.png)
 
 ## 🗄️ Mock API / JSON Server

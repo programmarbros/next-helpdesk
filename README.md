@@ -49,9 +49,9 @@ To run this project locally:
 
 Here are some screenshots showcasing the application:
 
-- **Dashboard**: ![Dashboard](./public/screenshots/dashboard.png)
-- **Ticket Page**: ![Ticket Page](./public/screenshots/tickets.png)
-- **Error Page**: ![Error Page](./public/screenshots/not-found.png)
+- **Dashboard**: ![Dashboard](/public/screenshots/dashboard.png)
+- **Ticket Page**: ![Ticket Page](/screenshots/tickets.png)
+- **Error Page**: ![Error Page](/public/screenshots/not-found.png)
 
 ## 🗄️ Mock API / JSON Server
 

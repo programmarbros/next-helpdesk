@@ -25,7 +25,7 @@ To run this project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/next-helpdesk.git
+   git clone https://github.com/programmarbros/next-helpdesk.git
    cd next-helpdesk
    ```
 
